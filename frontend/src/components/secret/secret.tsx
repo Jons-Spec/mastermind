@@ -1,6 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
-import { StopCircle } from "@mui/icons-material";
+import { Circle } from "@mui/icons-material";
 
 interface SecretProps {
   secret: { color: string }[]; // Define type for secret
@@ -12,16 +12,16 @@ const Secret: React.FC<SecretProps> = ({ secret, display }) => {
     <Box m={2}>
       {display
         ? secret.map((s, index) => (
-            <StopCircle
+            <Circle
               key={index}
               style={{ color: s.color, fontSize: "3rem" }}
-            ></StopCircle>
+            ></Circle>
           ))
         : secret.map((s, index) => (
-            <StopCircle
+            <Circle
               key={index}
               style={{ color: "white", fontSize: "3rem" }}
-            ></StopCircle>
+            ></Circle>
           ))}
     </Box>
   );

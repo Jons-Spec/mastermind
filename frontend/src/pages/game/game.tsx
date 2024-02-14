@@ -8,6 +8,8 @@ import pegs from "../../resources/pegs";
 import { useGameStatus } from "../../context/GameStatusProvider";
 import { useGuesses } from "../../context/GuessProvider";
 import { Divider } from "@mui/material";
+import Board from "../../components/board/board";
+import PlayerHand from "../../components/playerhand/playerhand";
 
 export default function Game() {
   const { secret, setSecret } = useSecret();
@@ -35,6 +37,12 @@ export default function Game() {
           <Secret secret={secret.pegs} display={secret.display} />
         )}
         <Divider />
+        <Board />
+        <PlayerHand
+          pegs={pegs}
+          secret={secret.pegs}
+          gameStatus={gameStatus.active}
+        />
       </Container>
     </>
   );
