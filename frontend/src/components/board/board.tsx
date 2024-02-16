@@ -1,6 +1,6 @@
 import { Badge } from "@mui/material";
 import { useGuesses } from "../../context/GuessProvider";
-import { Circle, StopCircle } from "@mui/icons-material";
+import { Circle } from "@mui/icons-material";
 
 interface Guess {
   color: string;

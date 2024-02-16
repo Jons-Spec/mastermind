@@ -42,19 +42,3 @@ const Boardheader: React.FC<HeaderProps> = ({ pegs }) => {
 };
 
 export default Boardheader;
-
-/*         <Button
-          onClick={() => {
-            setMessage(`
-                        Welcome to MASTERMIND. 
-                        Discover the secret using the colored pegs and hints. 
-                        Each black hint means a right color in the right position.
-                        Each white hint means a right color in the wrong position.
-                        Click on the colors to choose your pegs, and click on guess
-                        to see if you have the answer.
-                    `);
-          }}
-        >
-          Rules
-        </Button>
-        */
